@@ -1,0 +1,23 @@
+.linkCurrent {
+  @apply bg-gray-900 text-white;
+}
+
+.linkNotCurrent {
+  @apply text-gray-300 hover:bg-gray-700 hover:text-white;
+}
+
+.linkDefault {
+  @apply flex items-center px-2 py-2 text-base font-medium rounded-md;
+}
+
+.iconCurrent {
+  @apply text-gray-300;
+}
+
+.iconNotCurrent {
+  @apply text-gray-400 group-hover:text-gray-300;
+}
+
+.iconDefault {
+  @apply mr-4 flex-shrink-0 h-6 w-6;
+}

@@ -13,7 +13,7 @@ export interface CardProps
 const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ title, description, Icon, href, ...rest }, ref) => {
     return (
-      <div ref={ref} className={styles.card} {...rest}>
+      <div ref={ref} className={styles.card}>
         <div>
           <span className={styles.iconContainer}>
             <Icon className={styles.icon} aria-hidden="true" />
