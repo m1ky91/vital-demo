@@ -1,0 +1,39 @@
+.dialog {
+  @apply relative z-40 md:hidden;
+}
+
+.transitionOverlay {
+  @apply fixed inset-0 bg-gray-600 bg-opacity-75;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-gray-600 bg-opacity-75;
+}
+
+.slider {
+  @apply fixed inset-0 z-40 flex;
+}
+
+.transitionSlider {
+  @apply transition ease-in-out duration-300 transform;
+}
+
+.panel {
+  @apply relative flex w-full max-w-xs flex-1 flex-col bg-gray-800;
+}
+
+.transitionPanel {
+  @apply ease-in-out duration-300;
+}
+
+.closeButtonContainer {
+  @apply absolute top-0 right-0 -mr-12 pt-2;
+}
+
+.closeButton {
+  @apply ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white;
+}
+
+.closeButtonIcon {
+  @apply h-6 w-6 text-white;
+}
