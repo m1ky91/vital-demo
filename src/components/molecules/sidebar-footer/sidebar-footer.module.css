@@ -1,0 +1,23 @@
+.container {
+  @apply flex flex-shrink-0 bg-gray-700 p-4;
+}
+
+.link {
+  @apply block flex-shrink-0;
+}
+
+.innerLinkContainer {
+  @apply flex items-center;
+}
+
+.img {
+  @apply inline-block h-10 w-10 rounded-full;
+}
+
+.profileName {
+  @apply text-base font-medium text-white;
+}
+
+.viewProfile {
+  @apply text-sm font-medium text-gray-400 group-hover:text-gray-300;
+}
