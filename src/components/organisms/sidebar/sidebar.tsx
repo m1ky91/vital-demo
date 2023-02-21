@@ -1,12 +1,12 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { forwardRef, ComponentProps, Fragment, useState } from "react";
+import { forwardRef, ComponentProps, Fragment } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import styles from "./sidebar.module.css";
 
 export interface SidebarProps extends Omit<ComponentProps<"div">, "className"> {
   isOpen: boolean;
-  onOpen: any;
+  onOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(
